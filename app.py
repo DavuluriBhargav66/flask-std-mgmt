@@ -17,7 +17,7 @@ class Students(db.Model):
     student_class = db.Column(db.String(100), nullable=False)
     email = db.Column(db.String(100), nullable=False)
 
- with app.app_context():
+with app.app_context():
         db.create_all()
 
 # ******* Routes ******
